@@ -1,11 +1,20 @@
 header{
     width: 100%;
     .flexin(row, center, center);
+   
     
     nav{
         width: 40%;
         padding: 2%;
         .flexin(row, space-evenly, center);
+
+        @media @tablet{
+            width: 100%;
+            .flexin(row, space-evenly, center);
+        }
+        @media @mobile{
+            .flexin(column, center, center);
+        }
     }
 
     a{
