@@ -1,0 +1,30 @@
+header{
+    width: 100%;
+    .flexin(row, center, center);
+   
+    
+    nav{
+        width: 40%;
+        padding: 2%;
+        .flexin(row, space-evenly, center);
+
+        @media @tablet{
+            width: 100%;
+            .flexin(row, space-evenly, center);
+        }
+        @media @mobile{
+            .flexin(column, center, center);
+        }
+    }
+
+    a{
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: @link-color;
+        .about{
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+        }
+    }
+}

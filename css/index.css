@@ -1,4 +1,264 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  font-size: 62.5%;
+  max-width: 100%;
+}
+body {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+h1 {
+  font-size: 5rem;
+  font-family: 'Manrope', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img:hover {
+  opacity: 0.8;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 40%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header a {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #000000;
+}
+header a .about {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-weight: 900;
+  width: 90%;
+  height: 80vh;
+  margin: 0 auto;
+  padding-bottom: 4%;
+}
+.title-container:hover {
+  opacity: 0.8;
+}
+.title-container .title-text {
+  text-align: center;
+}
+.title-container .title-text .title-heading {
+  align-content: center;
+}
+.title-container .title-text h1 {
+  align-content: center;
+  padding: 4% 0;
+}
+.title-container .title-text .btn {
+  font-size: 1.6rem;
+  width: 25%;
+  background: #D3D3D3;
+  border-radius: 2px;
+  border: 1px solid #696969;
+  color: #000000;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.title-container .title-text .btn a {
+  color: #000000;
+}
+.artists-container {
+  padding-top: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 800px) {
+  .artists-container {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.artists-container .artist {
+  width: 45%;
+  padding: 4%;
+}
+@media (max-width: 800px) {
+  .artists-container .artist {
+    width: 50%;
+    padding: 3%;
+  }
+}
+.artists-container .artist img {
+  border-radius: 5px;
+  width: 100%;
+  height: 35vh;
+}
+.artists-container .artist a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  font-size: 1.8rem;
+  color: #000000;
+}
+.artists-container .artist .bio {
+  text-align: center;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .artists-container .artist {
+    width: 90%;
+  }
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v1/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
