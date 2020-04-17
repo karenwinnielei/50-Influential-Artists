@@ -185,7 +185,7 @@ const artists = [
       "years": "1541 - 1614",
       "genre": "Mannerism",
       "nationality": "Spanish,Greek",
-      "bio": "Doménikos Theotokópoulos (Greek: Δομήνικος Θεοτοκόπουλος [ðoˈminikos θeotoˈkopulos]; October 1541 –  7 April 1614), most widely known as El Greco (\"The Greek\"), was a painter, sculptor and architect of the Spanish Renaissance. \"El Greco\" was a nickname, a reference to his Greek origin, and the artist normally signed his paintings with his full birth name in Greek letters, Δομήνικος Θεοτοκόπουλος, Doménikos Theotokópoulos, often adding the word Κρής Krēs, Cretan.",
+      "bio": "Doménikos Theotokópoulos (Greek: Δομήνικος Θεοτοκόπουλος [ðoˈminikos θeotoˈkopulos]; October 1541 –  7 April 1614), most widely known as El Greco (\"The Greek\"), was a painter, sculptor and architect of the Spanish Renaissance. \"El Greco\" was a nickname, daa reference to his Greek origin, and the artist normally signed his paintings with his full birth name in Greek letters, Δομήνικος Θεοτοκόπουλος, Doménikos Theotokópoulos, often adding the word Κρής Krēs, Cretan.",
       "wikipedia": "http://en.wikipedia.org/wiki/El_Greco",
       "paintings": 87
     },
@@ -252,7 +252,7 @@ function removeArtist(artists, i) {
 function get20s(array5){
   let century = [];
   for(let i = 0; i < array5.length; i++){
-    if((array5[i].years > "1900") && (array5[i].years < "2000")){
+    if((array5[i].years >= "1900") && (array5[i].years < "2000")){
       century.push(array5[i].name);
     }
   }
@@ -301,13 +301,10 @@ function addArtist(id, name, years, genre, nationality, bio){
 function checkArtist(name8){
   for(let i = 0; i < artists.length; i++){
     if(name8 === artists[i].name){
-      console.log(`The name exists`);
-    }else{
-      console.log(`No such name exists`);
-    }
+      console.log(`The name exists in this dataset.`)};
   }
 }
-checkArtist();
+checkArtist("Karen Lei");
 
 
 
