@@ -249,16 +249,16 @@ function removeArtist(artists, i) {
 
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-// function get20s(artists){
-//   let century = [];
-//   for(let i = 0; i < artists.length, i++){
-//     if(artists[i].years === ) 
-
-//   }
-//     /* Code here */
-
-//   }
-
+function get20s(array5){
+  let century = [];
+  for(let i = 0; i < array5.length; i++){
+    if((array5[i].years > "1900") && (array5[i].years < "2000")){
+      century.push(array5[i].name);
+    }
+  }
+  console.log(century);
+  }
+get20s(artists);
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
 function lotsOfArt(array6){
@@ -271,7 +271,6 @@ function lotsOfArt(array6){
   console.log(paintingsNumber);
 }
 lotsOfArt(artists);
-
 
 /* Task 7: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
@@ -299,13 +298,16 @@ function addArtist(id, name, years, genre, nationality, bio){
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-// function checkArtist(name){
-//   for(i = 0; i < artists.length; i++){
-//     if(name === artists.name)
-//   }
-//     /* Code here */
-
-//   }
+function checkArtist(name8){
+  for(let i = 0; i < artists.length; i++){
+    if(name8 === artists[i].name){
+      console.log(`The name exists`);
+    }else{
+      console.log(`No such name exists`);
+    }
+  }
+}
+checkArtist();
 
 
 
