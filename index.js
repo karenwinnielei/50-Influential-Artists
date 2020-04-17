@@ -224,10 +224,10 @@ console.log(artists);
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-// function getArtistByIndex(id, name) {
-//     return `The artist at index ${id.name} is ${id[name].artist}`
-//   }
-//   console.log(getArtistByIndex());
+function getArtistByIndex(array, id) {
+    return `The artist at index ${id} is ${array[id].name}`
+  }
+  console.log(getArtistByIndex(artists,0));
   /**
 
 
@@ -261,17 +261,17 @@ function removeArtist(artists, i) {
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(artists){
-  let paintingsNumber = [];
-  for(let i = 0; i < artists.length; i++){
-    console.log(artists[i].name);
-    if(artists[i].paintings > 100){
-      paintingsNumber.push(artists[i].name);
+function lotsOfArt(array6){
+  const paintingsNumber = [];
+  for(let i = 0; i < array6.length; i++){
+    if(array6[i].paintings > 100){
+      paintingsNumber.push(array6[i].name);
     } 
   }
   console.log(paintingsNumber);
 }
-  
+lotsOfArt(artists);
+
 
 /* Task 7: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
@@ -299,11 +299,13 @@ function addArtist(id, name, years, genre, nationality, bio){
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist(/* Code here */){
+// function checkArtist(name){
+//   for(i = 0; i < artists.length; i++){
+//     if(name === artists.name)
+//   }
+//     /* Code here */
 
-    /* Code here */
-
-  }
+//   }
 
 
 
