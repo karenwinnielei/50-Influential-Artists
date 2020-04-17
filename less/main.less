@@ -1,11 +1,65 @@
 .title-container{
+    .flexin(column, center, center);
     background-image: url(/assets/home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
     color: white;
+    font-weight: 900;
     width: 90%;
+    height: 80vh;
     margin: 0 auto;
+    &:hover{
+        opacity: 0.8;
+    }
+    
+    .title-text{
+        .flexin(column, center, center){
+            align-content: center;
+        };
+        text-align: center;
+        .title-heading{
+            .flexin(column, center, center);
+        }
 
+        h1{
+            .flexin(column, center, center);
+        }
+
+        .btn{
+            .button(@button-bg, @button-border, @button-color);
+            margin: 0 auto;
+
+            a{
+                color: @black;
+            }
+        }
+    }
+
+}
+
+.artists-container{
+    .flexin(row, center, center);
+
+    .artist{
+        width: 45%;
+        padding: 4%;
+
+        img{
+            border-radius: 5px;
+        }
+
+        a{
+            .flexin(row, center, center);
+            padding: 2%;
+            font-size: 1.8rem;
+            color: @black;
+        }
+
+        .bio{
+            text-align: center;
+            padding: 2%;
+        }
+    }
 }

@@ -5,6 +5,14 @@
     align-items: @align;
 }
 
-.button(){
+.button(@button-bg, @button-border, @button-color){
     font-size: 1.6rem;
+    width: 25%;
+    background: @button-bg;
+    border-radius: 5px;
+    border: 1px solid @button-border;
+    color: @button-color;
+    padding: 10px 0;
+
 }
+
